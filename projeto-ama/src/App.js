@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import Login from "./login/login";
-
+import Site from "./site/site";
+import Login from "./login/login.js";
 
 function App() {
     return (
-       <Login/>
+       <Site/>
     );
 }
-
 export default App;

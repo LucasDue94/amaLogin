@@ -3,24 +3,24 @@ import styled from "styled-components";
 import logo from "../assets/logo.svg"
 
 const Main = styled.div`
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    position:fixed;
-    width:100%;
-    height:100%;
-    background-color:#135F51;
-    color:white;
-    font-family:"Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #135F51;
+    color: white;
+    font-family: "Roboto", sans-serif;
 `;
 const SubContainer = styled.div`
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:80%;
-    height:100%;
-    background-color:#00876E;
+    width: 80%;
+    height: 100%;
+    background-color: #00876E;
 `;
 const LoginContainer = styled.div`
     display:flex;
@@ -28,33 +28,32 @@ const LoginContainer = styled.div`
     justify-content:center;
     align-items: center;
     width: 25em;
-    height: 25em;
+    height :25em;
     background-color: #135F51;
     border-radius: 5px;
-    box-shadow: 1px 1px 10px black;
+    box-shadow 1px 1px 10px black;
 `;
-
 const Button = styled.button`
-    margin-top:10px;
+    margin-top: 10px;
     color: white;
     width: 66%;
-    padding:10px;
+    padding: 10px;
     background-color: #CC2936;
-    border-radius:5px;
-    border:none;
-    cursor:pointer;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
     
     ${this}:hover{
-        background-color:#DE767F;
+         background-color:#DE767F;
         transition:0.8s;
     }
-`;
+ `;
 const Input = styled.input`
     width:'60%';
     margin:'10px 0';
-    padding:'10px';
+    padding: '10px';
     borderRadius: '5px';
-    border:'1px solid green';
+    border: '1px solid green';
 `;
 const LinkPassword = styled.a`
     margin-top:10px;
@@ -62,15 +61,14 @@ const LinkPassword = styled.a`
     color: white;
 `;
 const logoStyle = {
-    width:'55%',
-    marginBottom:'20px',
+    width: '55%',
+    marginBottom: '20px',
 };
 const loginInput = {
-    width:'60%',
-    margin:'10px 0',
-    padding:'10px',
+    width: '60%',
+    margin: '10px 0',
+    padding: '10px',
     borderRadius: '5px',
-    border:'1px solid green',
 };
 
 function Login() {
@@ -78,7 +76,7 @@ function Login() {
         <Main>
             <SubContainer>
                 <LoginContainer>
-                <img style={logoStyle} src={logo} alt=""/>
+                    <img style={logoStyle} src={logo} alt=""/>
                     <input style={loginInput} type="text" placeholder={"Email ou nome do usuário"}/>
                     <input style={loginInput} type="password" placeholder={"Senha"}/>
                     <Button>Entrar</Button>
